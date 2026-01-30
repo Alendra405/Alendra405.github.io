@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pargon</title>
+    <meta charset = "utf-8">
+    <link rel="stylesheet" type="text/css" href="IndexCSS.css">
+    <link rel="icon" type="image/x-icon" sizes="16x16 64x64" href="media/logo.png">
+    <header class="menu">
+        <img src="media/logo.png" class="MenuLogo">
+        <p class="MenuTitle">Pargon Encryption</p>
+        <a href="downloads.html">download</a>
+        <a href="https://www.github.com/Alendra405/">github</a>
+    </header>
+    </head>
+    <body>
+        <div class="title">
+            <img src="media/logo.png" class="titleLogo">
+            <p class="title">PARGON <span class="version">1.1.0</span></p>
+            <p class="VerInfo">upgraded from <span class="OldVersion">1.0.0</span></p>
+            <button class="GS" onclick="location.href='https://www.github.com/Alendra405/pargon-26/archive/refs/heads/main.zip'">Get Source (.zip)</button>
+        </div>
+        <div class="WebBody">
+            <p class="MechanismTitle">AMB-84 Mechanism (Aperture Masked BB84)</p>
+            <img src="media/AMB.PNG" class="amb84png">
+            <p class="MechanismInfo">**The AMB-84 (Aperture-Masked BB84) mechanism is an enhanced variant of the BB84 quantum key distribution protocol that incorporates a deterministic, shared aperture mask to strengthen both message transmission integrity and eavesdropping detection. After establishing a secure shared key via standard BB84, both parties generate an identical two-dimensional mask containing a precisely defined set of apertures (holes) whose positions are derived deterministically from that key. The sender encodes each message bit by directing a simulated photon toward a specific aperture location on the mask; legitimate photons pass through the corresponding hole and are correctly received, while any misalignment—caused by an eavesdropper lacking the correct key—results in photons striking the opaque regions of the mask, producing a corrupted message and a sharply elevated error rate that is immediately detectable without requiring extensive statistical post-processing. This hybrid approach preserves the full length of the transmitted message, offers simpler and faster eavesdropping detection compared to classical BB84, and provides an additional physical-layer security barrier, although the current implementation remains a software simulation using Python and NumPy due to the high cost and complexity of realizing the aperture mask in hardware.**</p>
+            <p class="ReviewTitle">Changes from <span class="OldVersion">1.0.0</span> to <span class="version">1.1.0</span></p>
+            <p class="Options">The upgraded version 1.1.0 of the Pargon Encryption project, compared to version 1.0.0, has significantly enhanced noise resistance by increasing the grid size to 1000×1000, the number of mask holes to 1024, and the tolerance threshold to 5.0. These modifications make the system far more robust against small deviations, simulated noise, and floating-point precision issues, thereby preparing it better for more realistic simulations, while still guaranteeing complete and error-free message recovery for the legitimate recipient (when the mask matches) and preserving the intrusion detection mechanism based on aperture mismatch.</p>
+
+        </div>
+        <header class="bottomHeader">
+            <p class="copyright">MIT Copyright (c) 2026 Arman Baadpa</p>
+        </header>
+    </body>
+</html>

@@ -1,0 +1,221 @@
+html, head, body, section, div{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+div.title{
+    background-image: url("media/background.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:82vh;
+    background-color: black;
+    padding-top: 18vh;
+}
+p.title{
+    color: white;
+    font-family: FiraBold;
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 6vh;
+    background: -webkit-linear-gradient(#ffffff, #adadad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
+    
+}
+@font-face {
+    font-family: FiraBold;
+    src: url("media/FiraCode-SemiBold.ttf");
+}
+@font-face {
+    font-family: Fira;
+    src: url("media/FiraCode-Light.ttf");
+}
+.version{
+    background: -webkit-linear-gradient(#75cdff, #5a8dfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 1px 20px rgb(21, 122, 255);
+}
+.VerInfo{
+    color: white;
+    font-family: FiraBold;
+    text-align: center;
+    font-size: 1.5vh;
+    background: -webkit-linear-gradient(#ffffff, #adadad);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20vh;
+}
+.GS{
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: #313131;
+    margin: auto;
+    display: block;
+    font-size: 2vh;
+    color: rgb(156, 156, 156);
+    font-family: Fira;
+    padding: 15px;   
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 200vw;
+    background: linear-gradient(rgb(34, 34, 34), rgb(22, 22, 22));
+    transition: all 0.5s;
+}
+.GS:hover{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 0px 1px 100px rgb(49, 49, 49);
+}
+.OldVersion{
+        background: -webkit-linear-gradient(#fc4c4c, #dbb539);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0px 1px 10px rgb(255, 198, 74);
+}
+.menu{
+    width: 100%;
+    background-color: #1f1f1f7c;
+    padding-top: 2.3vh;
+    color: rgb(172, 172, 172);
+    font-family: Fira;
+    height: 5vh;
+    backdrop-filter: blur(10px);
+    position: fixed;
+}
+.MenuTitle{
+    float: left;
+    margin-top: 0.2vh;
+    margin-left: 1%;
+}
+.menu a{
+    margin-right: 5%;
+    float: right;
+    transition: all 0.5s;
+    color: #adadad;
+    text-decoration: none;
+}
+.menu a:hover{
+    color: white;
+    cursor: pointer;
+}
+.MenuLogo{
+    float: left;
+    width: 4vh;
+    margin-top: -1vh;
+    margin-left: 5vh;
+    border-radius: 0.5vw;
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: rgb(49, 49, 49);
+}
+.titleLogo{
+    margin: auto;
+    display: block;
+    width: 20vh;
+}
+.amb84png{
+    width: 30%;
+    float: right;
+    opacity: 0.8;
+}
+.WebBody{
+    padding-top: 5vh;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+.MechanismTitle{
+    background: -webkit-linear-gradient(#ffcb3b, #d84409);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: FiraBold;
+    font-size: 2vh;
+    float: left;
+    margin-top: 5vh;
+}
+.MechanismInfo{
+    color: rgb(196, 196, 196);
+    font-family: Fira;
+    font-size: 1.5vh;
+    width: 60%;
+    float: left;
+}
+.ReviewTitle{
+    float: left;
+    color: rgb(197, 197, 197);
+    font-family: FiraBold;
+    font-size: 2vh;
+}
+.Options{
+        color: rgb(196, 196, 196);
+    font-family: Fira;
+    font-size: 1.5vh;
+    width: 60%;
+    float: left;
+    margin-bottom: 10%;
+}
+.bottomHeader{
+    margin: auto;
+    display: block;
+    float: left;
+    width: 100%;
+    background: linear-gradient(rgb(36, 36, 36), rgb(0, 0, 0));
+    color: rgb(180, 180, 180);
+    font-family: Fira;
+    font-size: 0.7vw;
+    text-align: center;
+}
+.VersionIcon{
+    width: 5vh;
+    float: left;
+    margin-right: 1vh;
+}
+.DownloadDiv{
+    padding-top: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.DownloadCad{
+    background-color: rgb(24, 24, 24);
+    border-style: solid;
+    border-width: 0.1px;
+    border-color: rgb(37, 37, 37);
+    border-radius: 1vh;
+    height: 6vh;
+    padding-top: 1vh;
+    padding-left: 1vh;
+    margin-bottom: 2vh;
+}
+.VerName{
+    color: rgb(207, 207, 207);
+    float: left;
+    font-family: Fira;
+    margin-top: 1.3vh;
+
+}
+.DownloadButton{
+    float: right;
+    margin-top: 0.7vh;
+    margin-right: 2vh;
+    border-radius: 0.5vh;
+    border-color: rgb(68, 68, 68);
+    background-color: rgb(31, 31, 31);
+    border-style: solid;
+    border-width: 0.1px;
+    font-size: 1.7vh;
+    color: rgb(189, 189, 189);
+    font-family: Fira;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    transition: all 0.5s;
+}
+.DownloadButton:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0px 1px 100px gray;
+    cursor: pointer;
+}
